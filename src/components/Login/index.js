@@ -19,7 +19,7 @@ import iconFace from '../../assets/icon-face.png'
 import iconInsta from '../../assets/icon-insta.png'
 import iconWhats from '../../assets/icon-whatsapp.png'
 
-export default function Login () {
+export default function Login ({ setLogged }) {
     return (
         <Container background={background}>
             <DivContent>
@@ -47,7 +47,7 @@ export default function Login () {
                     <Input placeholder='Senha' />
                     <ButtonLogin
                         onClick={() => {
-                            console.log('Login')
+                            setLogged(true)
                         }}
                     >
                         Login
