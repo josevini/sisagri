@@ -2,6 +2,9 @@ import {
     Container,
     Cover,
     LoginForm,
+    TitleForm,
+    Input,
+    ButtonLogin,
     DivContent,
     Logo,
     ContentText,
@@ -9,7 +12,6 @@ import {
     Text,
     DivSocial,
     Icon,
-
 } from './styles'
 import background from '../../assets/background.png'
 import logo from '../../assets/logo.png'
@@ -37,7 +39,19 @@ export default function Login () {
                     </ContentText>
                 </DivContent>
                 <LoginForm>
-
+                    <TitleForm>
+                        Acesse sua conta
+                    </TitleForm>
+                    <Input placeholder='Empresa' />
+                    <Input placeholder='Usuário' />
+                    <Input placeholder='Senha' />
+                    <ButtonLogin
+                        onClick={() => {
+                            console.log('Login')
+                        }}
+                    >
+                        Login
+                    </ButtonLogin>
                 </LoginForm>
             <Cover />
         </Container>
