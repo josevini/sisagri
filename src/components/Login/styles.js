@@ -20,15 +20,46 @@ export const Cover = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
 `
 
-export const LoginForm = styled.form`
+export const LoginForm = styled.div`
     width: 280px;
     height: 420px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
+`
+
+export const TitleForm = styled.h2`
+    font-weight: 400;
+    margin-bottom: 50px;
+`
+
+export const Input = styled.input`
+    width: calc(100% - 50px);
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #dbdbdb;
+    color: grey;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 12px;
+`
+
+export const ButtonLogin = styled.button`
+    width: calc(100% - 50px);
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #1A877F;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
 `
 
 export const DivContent = styled.div`
@@ -51,13 +82,13 @@ export const ContentText = styled.div`
 `
 
 export const Title = styled.h1`
-    max-width: 300px;
+    max-width: 350px;
     line-height: 1.2em;
     font-size: 1.5em;
 `
 
 export const Text = styled.p`
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 10px;
 `
 
