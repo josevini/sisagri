@@ -14,12 +14,13 @@ import {
 import background from '../../assets/background.png'
 import logo from '../../assets/logo.png'
 import iconFace from '../../assets/icon-face.png'
+import iconInsta from '../../assets/icon-insta.png'
+import iconWhats from '../../assets/icon-whatsapp.png'
 
 export default function Login () {
     return (
         <Container background={background}>
-            <Cover>
-                <DivContent>
+            <DivContent>
                     <Logo src={logo} />
                     <ContentText>
                         <Title>
@@ -30,13 +31,15 @@ export default function Login () {
                         </Text>
                         <DivSocial>
                             <Icon src={iconFace} />
+                            <Icon src={iconInsta} />
+                            <Icon src={iconWhats} />
                         </DivSocial>
                     </ContentText>
                 </DivContent>
                 <LoginForm>
 
                 </LoginForm>
-            </Cover>
+            <Cover />
         </Container>
     )
 }
