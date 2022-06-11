@@ -7,14 +7,16 @@ export const Container = styled.main`
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 `
 
 export const Cover = styled.div`
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    position: absolute;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
 `
 
@@ -25,6 +27,8 @@ export const LoginForm = styled.form`
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
 `
 
 export const DivContent = styled.div`
@@ -33,8 +37,9 @@ export const DivContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
     color: white;
+    position: relative;
+    z-index: 2;
 `
 
 export const Logo = styled.img`
@@ -57,9 +62,12 @@ export const Text = styled.p`
 `
 
 export const DivSocial = styled.div`
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 `
 
 export const Icon = styled.img`
-    width: 50px;
+    width: 45px;
 `
