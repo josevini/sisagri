@@ -21,7 +21,7 @@ export const Cover = styled.div`
 `
 
 export const LoginForm = styled.div`
-    width: 280px;
+    width: 300px;
     height: 420px;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ export const TitleForm = styled.h2`
 `
 
 export const Input = styled.input`
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     padding: 5px;
     border-radius: 8px;
     border: 2px solid #dbdbdb;
@@ -51,7 +51,7 @@ export const Input = styled.input`
 `
 
 export const ButtonLogin = styled.button`
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     padding: 9px;
     border: none;
     border-radius: 4px;
