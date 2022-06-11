@@ -60,6 +60,7 @@ export const ButtonLogin = styled.button`
     color: white;
     font-weight: 500;
     margin-top: 30px;
+    cursor: pointer;
 `
 
 export const DivContent = styled.div`
