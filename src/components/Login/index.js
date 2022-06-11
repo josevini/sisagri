@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import {
     Container,
     Cover,
@@ -20,6 +21,9 @@ import iconInsta from '../../assets/icon-insta.png'
 import iconWhats from '../../assets/icon-whatsapp.png'
 
 export default function Login ({ setLogged }) {
+    const [empresa, setEmpresa] = useState('')
+    const [usuario, setUsuario] = useState('')
+    const [senha, setSenha] = useState('')
     return (
         <Container background={background}>
             <DivContent>
@@ -42,12 +46,32 @@ export default function Login ({ setLogged }) {
                     <TitleForm>
                         Acesse sua conta
                     </TitleForm>
-                    <Input placeholder='Empresa' />
-                    <Input placeholder='Usuário' />
-                    <Input placeholder='Senha' />
+                    <Input
+                        onBlur={(event) => {
+                            setEmpresa(event.target.value)
+                        }}
+                    placeholder='Empresa' />
+                    <Input
+                        onBlur={(event) => {
+                            setUsuario(event.target.value)
+                        }}
+                    placeholder='Usuário' />
+                    <Input
+                        onBlur={(event) => {
+                            setSenha(event.target.value)
+                        }}
+                    placeholder='Senha' />
                     <ButtonLogin
                         onClick={() => {
-                            setLogged(true)
+                            if (empresa.length && usuario.length && senha.length) {
+                                if (empresa === '1' && usuario === '4' && senha === '123456') {
+                                    setLogged(true)
+                                } else {
+                                    alert('Dados inválidos!')
+                                }
+                            } else {
+                                alert('Preencha todos os dados!')
+                            }
                         }}
                     >
                         Login
