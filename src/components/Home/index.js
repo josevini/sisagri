@@ -1,14 +1,20 @@
 import {
     Container,
     Panel,
+    Logo,
     Box,
     DarkBox,
     Cnpj,
     Main,
-    Logo,
-
+    DivSearch,
+    Input,
+    DivSocial,
+    Icon,
 } from './styles'
 import logo from '../../assets/logo.png'
+import iconFace from '../../assets/icon-face.png'
+import iconInsta from '../../assets/icon-insta.png'
+import iconWhats from '../../assets/icon-whatsapp.png'
 
 export default function Home () {
     return (
@@ -36,7 +42,15 @@ export default function Home () {
                 <Box>Estoque</Box>
             </Panel>
             <Main>
-                
+                <DivSearch>
+                    <h1>Olá</h1>
+                    <Input placeholder='Faça sua pesquisa' />
+                    <DivSocial>
+                        <Icon src={iconFace} />
+                        <Icon src={iconInsta} />
+                        <Icon src={iconWhats} />
+                    </DivSocial>
+                </DivSearch>
             </Main>
         </Container>
     )
