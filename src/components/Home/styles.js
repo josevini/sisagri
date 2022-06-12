@@ -43,3 +43,34 @@ export const Main = styled.main`
     height: 100vh;
     background-color: #F5F5F5;
 `
+
+export const DivSearch = styled.div`
+    width: calc(100% - 50px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    // border: 1px solid black;
+`
+
+export const Input = styled.input`
+    width: 450px;
+    padding: 6px;
+    border: 1px solid #E6E7E9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+`
+
+export const DivSocial = styled.div`
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
+
+export const Icon = styled.img`
+    width: 40px;
+    color: #00A69A;
+`
